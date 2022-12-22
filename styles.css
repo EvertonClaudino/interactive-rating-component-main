@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container, .container-thank-you{
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 380px;
+    padding: 20px;
+    background-color: hsl(213, 19%, 18%);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.image{
+    margin-bottom: 20px;
+    border-radius: 40px;
+    width: 40px;
+    background-color: hsla(217, 12%, 63%, 0.231);
+}
+
+.image img{
+    padding: 10px 0px 5px 11px;
+}
+
+.container h1{
+    margin-bottom: 20px;
+    font-size: 2em;
+
+}
+
+.container p{
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 25px;
+
+}
+.btn-rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+#btn{
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    gap: 20px;
+    transition: .5s;
+    background-color: hsla(216, 12%, 54%, 0.341);
+    color: #fff;
+}
+
+#btn:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+#btn:focus{
+    background-color: hsl(25, 97%, 53%);
+}
+
+#btn-submit, #btn-rateAgain{
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 15px;
+    background-color:hsl(25, 97%, 53%);
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#btn-rateAgain{
+    width: 100%;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+/*Page Thranks*/
+
+.container-thank-you{
+    margin: 15vh auto;
+    position: relative;
+    top: -20px;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
+
+.container-thank-you img{
+    margin-top: 20px;
+    width: 180px;
+}
+
+.textRating{
+    background-color: hsla(217, 12%, 63%, 0.231);
+    padding: 10px;
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+.container-thank-you p{
+    margin-top: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/*MEDIA*/
+
+@media (max-width:834px) {
+    .container, .container-thank-you{
+        width: 600px;
+        height: 600px;
+    }
+    .container img{
+        width: 40px;
+    }
+
+    .image{
+        width: 50px;
+    }
+    .container h1{
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+
+    .container p{
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    #btn{
+        padding: 30px;
+        border-radius: 40px;
+        font-size: 1.8em;
+    }
+
+    #btn-submit{
+        padding: 25px;
+        font-size: 1.6em;
+    }
+
+
+    
+    .container-thank-you img{
+        width: 300px;
+
+    }
+
+    .textRating{
+        font-size: 1.8em;
+        width: 330px;
+    }
+
+    .container-thank-you h1{
+        font-size: 3em;
+    }
+
+    .container-thank-you p {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    #btn-rateAgain{
+        padding: 25px;
+        font-size: 1.6em;
+        
+    }
+    
+}
+
+@media (max-width:414px) {
+    .container{
+        margin: 30px auto;
+        width: 350px;
+    }
+
+    .container img{
+        width: 40px;
+    }
+
+    .container h1{
+        font-size: 2.5em;
+    }
+
+    .container p {
+        font-size: 1.2em;
+    }
+
+    #btn{
+        padding: 15px 20px 15px 20px;
+    }
+
+    .btn-rating{
+        gap: 10px;
+    }
+
+    #btn-submit{
+        padding: 15px;
+    }
+
+    .container-thank-you{
+        margin: 50px auto;
+        width: 350px;
+    }
+
+    .container-thank-you img{
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: -10px;
+    }
+
+    .textRating{
+        font-size: 10px;
+        padding: 10px;
+        width: 250px;
+    }
+    .container-thank-you h1{
+        font-size: 2.3em;
+    }
+
+    .container-thank-you p{
+        margin-top: -10px;
+        font-size: 1.2em;
+    }
+
+    #btn-rateAgain{
+        padding: 15px;
+    }
+    
+}

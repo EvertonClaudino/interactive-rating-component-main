@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+<section>
+  
+    <div class="container">
+  
+      <div class="image">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+  
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+  
+      <div class="btn-rating">
+        <button id="btn" class="btns">1</button>
+        <button id="btn" class="btns">2</button>
+        <button id="btn" class="btns">3</button>
+        <button id="btn" class="btns">4</button>
+        <button id="btn" class="btns">5</button>
+  
+      </div>
+      <button type="submit" id="btn-submit">Submit</button>
+    </div>
+  
+    <!-- Rating state end -->
+  
+  
+  
+    <!-- Thank you state start -->
+  <div class="container-thank-you hidden">
+  
+      <img src="./images/illustration-thank-you.svg" alt="">
+  
+      <p class="textRating">You selected <span id="rating">0</span> out of 5</p>
+  
+      <h1>Thank you!</h1>
+  
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+      
+      <button type="submit" id="btn-rateAgain">Rate Again</button>
+
+  </div>
+</section>
+
+  <!-- Thank you state end -->
+  <script src="./script.js"></script> 
+</body>
+</html>
